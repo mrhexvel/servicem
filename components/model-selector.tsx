@@ -554,7 +554,7 @@ export function ModelSelector() {
                     whileTap={{ scale: 0.97 }}
                   >
                     <Button className="w-full" asChild>
-                      <a href="tel:+996555123456">Заказать ремонт</a>
+                      <a href="tel:+996227100100">Заказать ремонт</a>
                     </Button>
                   </motion.div>
                 </CardContent>

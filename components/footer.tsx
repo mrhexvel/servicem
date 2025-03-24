@@ -26,7 +26,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t bg-muted/30">
+    <footer className="border-t bg-muted/30" id="contact">
       <div className="container mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="flex md:items-center justify-between flex-col md:flex-row gap-8 md:gap-0">
           <motion.div
@@ -46,7 +46,7 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <Phone className="h-4 w-4 text-primary" />
               <a
-                href="tel:+996555123456"
+                href="tel:+996227100100"
                 className="hover:text-primary transition-colors"
               >
                 +996 (227) 10-01-00

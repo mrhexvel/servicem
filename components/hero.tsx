@@ -45,7 +45,7 @@ export function Hero() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Button size="lg" className="w-full sm:w-auto" asChild>
-                  <a href="tel:+996555123456">Заказать ремонт</a>
+                  <a href="tel:+996227100100">Заказать ремонт</a>
                 </Button>
               </motion.div>
             </motion.div>

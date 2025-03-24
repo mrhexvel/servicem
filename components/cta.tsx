@@ -52,7 +52,7 @@ export function Cta() {
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button size="lg" variant="secondary" asChild>
-              <a href="tel:+996555123456">Заказать ремонт</a>
+              <a href="tel:+996227100100">Заказать ремонт</a>
             </Button>
           </motion.div>
         </motion.div>
