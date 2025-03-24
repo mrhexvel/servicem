@@ -1,6 +1,6 @@
 export function ServiceLogo({
   className = "",
-  width = 130,
+  width = 200,
   height = 29,
 }: {
   className?: string;
@@ -24,7 +24,7 @@ export function ServiceLogo({
         fontWeight="bold"
         fill="currentColor"
       >
-        XSERVICE
+        SERVICE MOBILE
       </text>
     </svg>
   );
