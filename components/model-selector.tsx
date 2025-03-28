@@ -16,7 +16,7 @@ export function ModelSelector() {
     setIsLoaded(true);
   }, []);
 
-  const brands = ["Samsung", "Apple", "Xiaomi"];
+  const brands = ["Samsung", "Xiaomi"];
 
   const modelsByBrand = {
     Samsung: [
@@ -26,14 +26,6 @@ export function ModelSelector() {
       "Galaxy Note 20",
       "Galaxy A53",
       "Galaxy Z Fold4",
-    ],
-    Apple: [
-      "iPhone 15 Pro",
-      "iPhone 15",
-      "iPhone 14 Pro",
-      "iPhone 14",
-      "iPhone 13",
-      "iPhone SE",
     ],
     Xiaomi: [
       "Mi 13",
