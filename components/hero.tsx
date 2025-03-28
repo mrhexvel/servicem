@@ -31,8 +31,8 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               Авторизованный сервисный центр с гарантией на все виды работ.
-              Ремонт Samsung, Apple, Xiaomi и других брендов от 30 минут с
-              бесплатной диагностикой.
+              Ремонт любых моделей смартфонов от 30 минут с бесплатной
+              диагностикой.
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-3"

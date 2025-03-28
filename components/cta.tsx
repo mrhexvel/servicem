@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export function Cta() {
   return (
@@ -12,7 +12,11 @@ export function Cta() {
           scale: [1, 1.2, 1],
           opacity: [0.1, 0.2, 0.1],
         }}
-        transition={{ repeat: Number.POSITIVE_INFINITY, duration: 5, ease: "easeInOut" }}
+        transition={{
+          repeat: Number.POSITIVE_INFINITY,
+          duration: 5,
+          ease: "easeInOut",
+        }}
       />
       <motion.div
         className="absolute -bottom-20 -right-20 w-60 h-60 rounded-full bg-white/10"
@@ -20,7 +24,12 @@ export function Cta() {
           scale: [1, 1.1, 1],
           opacity: [0.1, 0.15, 0.1],
         }}
-        transition={{ repeat: Number.POSITIVE_INFINITY, duration: 7, ease: "easeInOut", delay: 1 }}
+        transition={{
+          repeat: Number.POSITIVE_INFINITY,
+          duration: 7,
+          ease: "easeInOut",
+          delay: 1,
+        }}
       />
 
       <div className="container mx-auto px-4 md:px-6 text-center space-y-6 relative z-10">
@@ -40,8 +49,8 @@ export function Cta() {
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Быстрый и качественный ремонт Samsung, Apple, Xiaomi и других брендов с гарантией от авторизованного
-          сервисного центра
+          Быстрый и качественный ремонт смартфонов, планшетов и умных часов с
+          гарантией от авторизованного сервисного центра
         </motion.p>
         <motion.div
           className="flex justify-center pt-4"
@@ -58,6 +67,5 @@ export function Cta() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

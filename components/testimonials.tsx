@@ -1,52 +1,52 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { Star } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
-import { motion, useInView } from "framer-motion"
+import { Card, CardContent } from "@/components/ui/card";
+import { motion, useInView } from "framer-motion";
+import { Star } from "lucide-react";
+import { useRef } from "react";
 
 export function Testimonials() {
-  const containerRef = useRef(null)
-  const isInView = useInView(containerRef, { once: true, amount: 0.2 })
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { once: true, amount: 0.2 });
 
   const testimonials = [
     {
       name: "Азамат К.",
-      model: "Samsung Galaxy S22",
+      model: "Смартфон",
       rating: 5,
-      text: "Отличный сервис! Заменили экран на моем Galaxy S22 за час. Качество отличное, цена адекватная. Рекомендую!",
+      text: "Отличный сервис! Заменили экран на моем телефоне за час. Качество отличное, цена адекватная. Рекомендую!",
     },
     {
       name: "Айгуль М.",
-      model: "iPhone 13 Pro",
+      model: "Смартфон премиум-класса",
       rating: 5,
-      text: "Думала, что ремонт iPhone будет стоить целое состояние, но цена оказалась вполне разумной. Спасибо за профессионализм!",
+      text: "Думала, что ремонт будет стоить целое состояние, но цена оказалась вполне разумной. Спасибо за профессионализм!",
     },
     {
       name: "Бакыт Т.",
-      model: "Xiaomi Mi 12",
+      model: "Смартфон",
       rating: 4,
       text: "Быстро заменили батарею, телефон снова работает весь день. Единственный минус - пришлось подождать запчасть пару дней.",
     },
     {
       name: "Гульнара О.",
-      model: "iPhone 14",
+      model: "Смартфон",
       rating: 5,
       text: "Уронила телефон в воду, думала всё. Но в сервисе спасли и телефон, и все данные! Огромное спасибо мастерам!",
     },
     {
       name: "Эрмек Д.",
-      model: "Samsung Galaxy S21",
+      model: "Смартфон",
       rating: 5,
       text: "Обращался с проблемой камеры. Диагностику провели при мне, всё объяснили и быстро устранили проблему. Рекомендую!",
     },
     {
       name: "Айнура С.",
-      model: "Xiaomi Redmi Note 11",
+      model: "Планшет",
       rating: 5,
       text: "Профессиональный подход, вежливый персонал. Заменили экран с сохранением всех функций. Всё отлично!",
     },
-  ]
+  ];
 
   const container = {
     hidden: { opacity: 0 },
@@ -57,12 +57,12 @@ export function Testimonials() {
         delayChildren: 0.3,
       },
     },
-  }
+  };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
-  }
+  };
 
   return (
     <section id="testimonials" className="py-12 md:py-24">
@@ -73,8 +73,12 @@ export function Testimonials() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Отзывы клиентов</h2>
-          <p className="text-muted-foreground md:text-xl max-w-3xl mx-auto">Что говорят о нас наши клиенты</p>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+            Отзывы клиентов
+          </h2>
+          <p className="text-muted-foreground md:text-xl max-w-3xl mx-auto">
+            Что говорят о нас наши клиенты
+          </p>
         </motion.div>
 
         <motion.div
@@ -104,13 +108,20 @@ export function Testimonials() {
                     {Array(5 - testimonial.rating)
                       .fill(0)
                       .map((_, i) => (
-                        <Star key={i} className="h-5 w-5 text-muted-foreground" />
+                        <Star
+                          key={i}
+                          className="h-5 w-5 text-muted-foreground"
+                        />
                       ))}
                   </div>
-                  <p className="text-muted-foreground flex-1">{testimonial.text}</p>
+                  <p className="text-muted-foreground flex-1">
+                    {testimonial.text}
+                  </p>
                   <div className="pt-4 border-t">
                     <div className="font-medium">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.model}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {testimonial.model}
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -119,6 +130,5 @@ export function Testimonials() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

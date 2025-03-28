@@ -41,7 +41,7 @@ export function Footer() {
             </div>
             <p className="text-muted-foreground">
               Авторизованный сервисный центр с гарантией на все виды работ.
-              Ремонт Samsung, Apple, Xiaomi и других брендов.
+              Ремонт смартфонов любых моделей.
             </p>
             <div className="flex items-center gap-3">
               <Phone className="h-4 w-4 text-primary" />
